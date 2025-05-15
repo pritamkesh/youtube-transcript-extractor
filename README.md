@@ -3,6 +3,20 @@
 ## Overview
 This project provides a modern web application for extracting and downloading transcripts from YouTube videos. Built with Python (Flask) backend and a clean, responsive frontend, it offers an easy way to access video transcripts without any API keys or costs.
 
+## 📸 Screenshots
+
+### Main Interface
+![Main Interface](screenshots/main.png)
+*Clean and simple interface for entering YouTube URLs*
+
+### Loading State
+![Loading State](screenshots/loading.png)
+*Smooth loading animation while fetching transcript*
+
+### Transcript Display
+![Transcript Display](screenshots/transcript.png)
+*Transcript display with download option*
+
 ## 🌟 Key Features
 - **Easy Transcript Extraction**: Simply paste a YouTube URL and get the transcript
 - **Modern UI/UX**: Clean, responsive design with loading states and error handling
