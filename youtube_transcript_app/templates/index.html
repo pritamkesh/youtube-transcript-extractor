@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YouTube Transcript Downloader</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>YouTube Transcript Downloader</h1>
+            <p class="subtitle">Extract and download text transcripts from any YouTube video</p>
+        </header>
+
+        <main>
+            <div class="input-section">
+                <div class="input-wrapper">
+                    <input type="text" id="videoUrl" placeholder="Paste YouTube video URL here">
+                    <button id="getTranscript">Get Transcript</button>
+                </div>
+            </div>
+
+            <div class="loader" id="loader">
+                <div class="spinner"></div>
+                <p>Fetching transcript...</p>
+            </div>
+
+            <div class="result-section" id="resultSection">
+                <div class="transcript-container">
+                    <div class="transcript-header">
+                        <h2>Transcript</h2>
+                        <button id="downloadBtn" class="download-btn">Download Text</button>
+                    </div>
+                    <div class="transcript-content" id="transcriptContent"></div>
+                </div>
+            </div>
+
+            <div class="error-message" id="errorMessage"></div>
+        </main>
+
+        <footer>
+            <p>Made with ❤️ for content creators and learners by Pritam Kesh</p>
+        </footer>
+    </div>
+
+    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+</body>
+</html> 
